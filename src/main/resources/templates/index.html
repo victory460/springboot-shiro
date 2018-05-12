@@ -35,7 +35,7 @@
                     <div class="logo-element"></div>
                 </li>
                 <li shiro:hasRole="admin">
-                    <a id="plink" class="J_menuItem" th:href="@{/project/index.html}"><span class="nav-label">项目管理</span></a>
+                    <a id="plink" class="J_menuItem" th:href="@{/www/index.html}"><span class="nav-label">项目管理</span></a>
                 </li>
                 <li shiro:hasRole="admin" th:if="${session.projectNum} and (${session.projectNum} gt 0)">
                     <a class="J_menuItem" th:href="@{/user/index.html}"><span class="nav-label">用户管理</span></a>
